@@ -1,0 +1,22 @@
+{
+  "name": "TableViewReuse",
+  "version": "0.1.0",
+  "summary": "A short description of TableViewReuse.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/cba023/TableViewReuse",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cba023": "bo.chen@zkj.com"
+  },
+  "source": {
+    "git": "https://github.com/cba023/TableViewReuse.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TableViewReuse/Classes/**/*"
+}
