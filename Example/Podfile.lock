@@ -1,0 +1,16 @@
+PODS:
+  - TableViewReuse (0.1.1)
+
+DEPENDENCIES:
+  - TableViewReuse (from `../`)
+
+EXTERNAL SOURCES:
+  TableViewReuse:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TableViewReuse: b862e08b11fb40d3197cb3d5a674036a554751bd
+
+PODFILE CHECKSUM: 89c8bcc050ebb11a3033a87b00d157d7bb3ee537
+
+COCOAPODS: 1.10.1

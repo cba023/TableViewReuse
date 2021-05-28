@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A517565E246C77B372B4F62994E78F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		4F349F6C3BEDE53F6849CCEFF0516EAF /* Pods-TableViewReuse_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F3CD5FFABE65F641F26255DB7370BB /* Pods-TableViewReuse_Tests-dummy.m */; };
+		5D53AC3510AF1719A2AAEB83A5CCA3BF /* UITableViewReuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC57A7815008C354E1165B9951A4D6 /* UITableViewReuse.swift */; };
+		8BCC4767D110071EF1EB8DAC06BD57C8 /* Pods-TableViewReuse_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3778AADB619C208DC4CA1D4A0AF462 /* Pods-TableViewReuse_Example-dummy.m */; };
+		8DA35938EB6970A92097AA10FCDEE59A /* TableViewReuse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7178262FA8568B6A49A12DA199DB23 /* TableViewReuse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC5C0A4D839BCF09632EE53C75BF3011 /* Pods-TableViewReuse_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 262BA1DE17787330250E11F53981725B /* Pods-TableViewReuse_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F49CC7C1507FC7B673B18186EDCCD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		B940E44741E9C6301D81DA57A1A297FE /* UITableView+Reuse.m in Sources */ = {isa = PBXBuildFile; fileRef = 014F75F845E4A3C669AA78D47C2E230A /* UITableView+Reuse.m */; };
+		BD540188260C48E4A902C8FC245D2258 /* UITableView+Reuse.h in Headers */ = {isa = PBXBuildFile; fileRef = 56AB8057C3DF9905ADAD0407DC49D3DB /* UITableView+Reuse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDF464A3E45D7A3CFDD0F47C1F345D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		CF1F0F0CEB64BE32C435D79C13DFC65B /* Pods-TableViewReuse_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6498D6625130ECD2AE82A5323A9974B3 /* Pods-TableViewReuse_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAEF3416E35AAB079E49F3191E7FA0B0 /* TableViewReuse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 310C7D5AB54003239A37432F00E394FC /* TableViewReuse-dummy.m */; };
+		E2AFF7F7450631EA16D8B4F7AC2D2F86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AA7C2E83A9BBAD6F68277AD4D153F37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 622214B9F3D33E3368662F77088849B3;
+			remoteInfo = TableViewReuse;
+		};
+		D679B0483C528D2A3239F124BCB5764B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA10EBA53DFC45629254756799333385;
+			remoteInfo = "Pods-TableViewReuse_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014F75F845E4A3C669AA78D47C2E230A /* UITableView+Reuse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Reuse.m"; path = "TableViewReuse/Classes/UITableView+Reuse.m"; sourceTree = "<group>"; };
+		08F3CD5FFABE65F641F26255DB7370BB /* Pods-TableViewReuse_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableViewReuse_Tests-dummy.m"; sourceTree = "<group>"; };
+		2104E6CC02C2F45E0558BD2C9BFC735B /* Pods-TableViewReuse_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableViewReuse_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		262BA1DE17787330250E11F53981725B /* Pods-TableViewReuse_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableViewReuse_Example-umbrella.h"; sourceTree = "<group>"; };
+		2CEA40B418CCEA2CC2CDC62751A0C93E /* TableViewReuse.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TableViewReuse.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		310C7D5AB54003239A37432F00E394FC /* TableViewReuse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableViewReuse-dummy.m"; sourceTree = "<group>"; };
+		373A077187019044EF15505A42B64CE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3B3778AADB619C208DC4CA1D4A0AF462 /* Pods-TableViewReuse_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableViewReuse_Example-dummy.m"; sourceTree = "<group>"; };
+		40794AF32B839A11D6BA80A2E0B9A4C9 /* Pods-TableViewReuse_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableViewReuse_Tests-Info.plist"; sourceTree = "<group>"; };
+		56AB8057C3DF9905ADAD0407DC49D3DB /* UITableView+Reuse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+Reuse.h"; path = "TableViewReuse/Classes/UITableView+Reuse.h"; sourceTree = "<group>"; };
+		6498D6625130ECD2AE82A5323A9974B3 /* Pods-TableViewReuse_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableViewReuse_Tests-umbrella.h"; sourceTree = "<group>"; };
+		776F67638C69E0B735F98C991EABFA76 /* TableViewReuse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewReuse-prefix.pch"; sourceTree = "<group>"; };
+		806D88290A27F3E8D4B733637A3BCA7F /* Pods-TableViewReuse_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableViewReuse_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B84AF2D16245EE57E12086E000F38DA /* TableViewReuse-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TableViewReuse-Info.plist"; sourceTree = "<group>"; };
+		90EB27681A79B6B11DA5EBF8F3BA5EDB /* Pods-TableViewReuse_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableViewReuse_Example-Info.plist"; sourceTree = "<group>"; };
+		9579407DB9EC125CA5A77FD7BA6712F6 /* Pods-TableViewReuse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableViewReuse_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9B038F4D1ECF9FF6869089FD281042D /* Pods-TableViewReuse_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TableViewReuse_Tests.modulemap"; sourceTree = "<group>"; };
+		AAB510906BD79671586A93A908657DE8 /* Pods-TableViewReuse_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableViewReuse_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AF64F607A83EF1CD1BD6B284B59F5894 /* Pods_TableViewReuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableViewReuse_Tests.framework; path = "Pods-TableViewReuse_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEC57A7815008C354E1165B9951A4D6 /* UITableViewReuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewReuse.swift; path = TableViewReuse/Classes/UITableViewReuse.swift; sourceTree = "<group>"; };
+		C463B7CD8741B99D1240263D1028BB5F /* Pods_TableViewReuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableViewReuse_Example.framework; path = "Pods-TableViewReuse_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E867FDD3CD5DBF78163E2C35E01642 /* TableViewReuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewReuse.debug.xcconfig; sourceTree = "<group>"; };
+		CF187D66621479921476744528F88040 /* Pods-TableViewReuse_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableViewReuse_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D0C0AB200142129A741B97704DE14AC1 /* Pods-TableViewReuse_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableViewReuse_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D43E513232824118B3A49A1B6856FE5E /* Pods-TableViewReuse_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableViewReuse_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D744BB5415CB4AC77F459FB1EF59A0BB /* TableViewReuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableViewReuse.release.xcconfig; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EC7178262FA8568B6A49A12DA199DB23 /* TableViewReuse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableViewReuse-umbrella.h"; sourceTree = "<group>"; };
+		F19F3869F1D4690B24090C7D0F21C60D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F527401AC894DDF5F8CB9FF0C2C406FC /* TableViewReuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TableViewReuse.framework; path = TableViewReuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9279017A5480CB56D68CBB5AA32B449 /* Pods-TableViewReuse_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TableViewReuse_Example.modulemap"; sourceTree = "<group>"; };
+		FA9113E6801F5152F209C338AB578FE2 /* Pods-TableViewReuse_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableViewReuse_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD78535D01B3F2CF13D0546B71B0B45C /* TableViewReuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TableViewReuse.modulemap; sourceTree = "<group>"; };
+		FFC57098283510C4FB8F5407F599A0D4 /* Pods-TableViewReuse_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableViewReuse_Example-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B9ED588E8CB6B278D1A1A39158A435E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AFF7F7450631EA16D8B4F7AC2D2F86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B75CA346FBAB6BBFA81FBE3FCF588A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A517565E246C77B372B4F62994E78F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6929623851EB37D0CC58E851DC7DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDF464A3E45D7A3CFDD0F47C1F345D38 /* Foundation.framework in Frameworks */,
+				B6F49CC7C1507FC7B673B18186EDCCD0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3079C276742F00080A17916B2D6F5351 /* Pods-TableViewReuse_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F9279017A5480CB56D68CBB5AA32B449 /* Pods-TableViewReuse_Example.modulemap */,
+				2104E6CC02C2F45E0558BD2C9BFC735B /* Pods-TableViewReuse_Example-acknowledgements.markdown */,
+				CF187D66621479921476744528F88040 /* Pods-TableViewReuse_Example-acknowledgements.plist */,
+				3B3778AADB619C208DC4CA1D4A0AF462 /* Pods-TableViewReuse_Example-dummy.m */,
+				FFC57098283510C4FB8F5407F599A0D4 /* Pods-TableViewReuse_Example-frameworks.sh */,
+				90EB27681A79B6B11DA5EBF8F3BA5EDB /* Pods-TableViewReuse_Example-Info.plist */,
+				262BA1DE17787330250E11F53981725B /* Pods-TableViewReuse_Example-umbrella.h */,
+				9579407DB9EC125CA5A77FD7BA6712F6 /* Pods-TableViewReuse_Example.debug.xcconfig */,
+				D43E513232824118B3A49A1B6856FE5E /* Pods-TableViewReuse_Example.release.xcconfig */,
+			);
+			name = "Pods-TableViewReuse_Example";
+			path = "Target Support Files/Pods-TableViewReuse_Example";
+			sourceTree = "<group>";
+		};
+		3F93DDAAA6EAD9D4F6B18F0635A91DE1 /* Pods-TableViewReuse_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A9B038F4D1ECF9FF6869089FD281042D /* Pods-TableViewReuse_Tests.modulemap */,
+				D0C0AB200142129A741B97704DE14AC1 /* Pods-TableViewReuse_Tests-acknowledgements.markdown */,
+				FA9113E6801F5152F209C338AB578FE2 /* Pods-TableViewReuse_Tests-acknowledgements.plist */,
+				08F3CD5FFABE65F641F26255DB7370BB /* Pods-TableViewReuse_Tests-dummy.m */,
+				40794AF32B839A11D6BA80A2E0B9A4C9 /* Pods-TableViewReuse_Tests-Info.plist */,
+				6498D6625130ECD2AE82A5323A9974B3 /* Pods-TableViewReuse_Tests-umbrella.h */,
+				806D88290A27F3E8D4B733637A3BCA7F /* Pods-TableViewReuse_Tests.debug.xcconfig */,
+				AAB510906BD79671586A93A908657DE8 /* Pods-TableViewReuse_Tests.release.xcconfig */,
+			);
+			name = "Pods-TableViewReuse_Tests";
+			path = "Target Support Files/Pods-TableViewReuse_Tests";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		74BB1717C24F802541A75C032F4945FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD78535D01B3F2CF13D0546B71B0B45C /* TableViewReuse.modulemap */,
+				310C7D5AB54003239A37432F00E394FC /* TableViewReuse-dummy.m */,
+				8B84AF2D16245EE57E12086E000F38DA /* TableViewReuse-Info.plist */,
+				776F67638C69E0B735F98C991EABFA76 /* TableViewReuse-prefix.pch */,
+				EC7178262FA8568B6A49A12DA199DB23 /* TableViewReuse-umbrella.h */,
+				C5E867FDD3CD5DBF78163E2C35E01642 /* TableViewReuse.debug.xcconfig */,
+				D744BB5415CB4AC77F459FB1EF59A0BB /* TableViewReuse.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TableViewReuse";
+			sourceTree = "<group>";
+		};
+		840432F4732E2362B24B5BF8BD16A9EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C463B7CD8741B99D1240263D1028BB5F /* Pods_TableViewReuse_Example.framework */,
+				AF64F607A83EF1CD1BD6B284B59F5894 /* Pods_TableViewReuse_Tests.framework */,
+				F527401AC894DDF5F8CB9FF0C2C406FC /* TableViewReuse.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B622B39BF88908DC615DD2F6EC6DA960 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F19F3869F1D4690B24090C7D0F21C60D /* LICENSE */,
+				373A077187019044EF15505A42B64CE9 /* README.md */,
+				2CEA40B418CCEA2CC2CDC62751A0C93E /* TableViewReuse.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BA8A305F72270017189D381AD09D1317 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC7EAD30FD73A09E396B9F9CA129B4D6 /* TableViewReuse */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA8A305F72270017189D381AD09D1317 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				840432F4732E2362B24B5BF8BD16A9EF /* Products */,
+				F42BF4F6CABBBFB574832CB3F96144BA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F42BF4F6CABBBFB574832CB3F96144BA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3079C276742F00080A17916B2D6F5351 /* Pods-TableViewReuse_Example */,
+				3F93DDAAA6EAD9D4F6B18F0635A91DE1 /* Pods-TableViewReuse_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FC7EAD30FD73A09E396B9F9CA129B4D6 /* TableViewReuse */ = {
+			isa = PBXGroup;
+			children = (
+				56AB8057C3DF9905ADAD0407DC49D3DB /* UITableView+Reuse.h */,
+				014F75F845E4A3C669AA78D47C2E230A /* UITableView+Reuse.m */,
+				AFEC57A7815008C354E1165B9951A4D6 /* UITableViewReuse.swift */,
+				B622B39BF88908DC615DD2F6EC6DA960 /* Pod */,
+				74BB1717C24F802541A75C032F4945FE /* Support Files */,
+			);
+			name = TableViewReuse;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		327DFD5D4588F92334C78C1C6BDAD489 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1F0F0CEB64BE32C435D79C13DFC65B /* Pods-TableViewReuse_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A364D87BC2D9FE7BFF82A333D0B2D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA35938EB6970A92097AA10FCDEE59A /* TableViewReuse-umbrella.h in Headers */,
+				BD540188260C48E4A902C8FC245D2258 /* UITableView+Reuse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F51186FE0FDA6D1BE584A4DCAAEE230 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5C0A4D839BCF09632EE53C75BF3011 /* Pods-TableViewReuse_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		622214B9F3D33E3368662F77088849B3 /* TableViewReuse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2B6D6A437ACC359075575F9E3AFFA6 /* Build configuration list for PBXNativeTarget "TableViewReuse" */;
+			buildPhases = (
+				97A364D87BC2D9FE7BFF82A333D0B2D8 /* Headers */,
+				33B84813E393E237098F93B6FE713427 /* Sources */,
+				5F6929623851EB37D0CC58E851DC7DF5 /* Frameworks */,
+				5F09AD71712AA5A894275392AC00CBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewReuse;
+			productName = TableViewReuse;
+			productReference = F527401AC894DDF5F8CB9FF0C2C406FC /* TableViewReuse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8185B02268F8ED8744D2C065A52C2A8F /* Pods-TableViewReuse_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4843C97F77892CF8353D7EE791C08A /* Build configuration list for PBXNativeTarget "Pods-TableViewReuse_Tests" */;
+			buildPhases = (
+				327DFD5D4588F92334C78C1C6BDAD489 /* Headers */,
+				8680E3C0358C2DA553E5BC79284CC2B6 /* Sources */,
+				3B75CA346FBAB6BBFA81FBE3FCF588A4 /* Frameworks */,
+				04CE855D7375E20B13A04259962D9A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A674AD6E0586C67657F72BDC6A5913FD /* PBXTargetDependency */,
+			);
+			name = "Pods-TableViewReuse_Tests";
+			productName = "Pods-TableViewReuse_Tests";
+			productReference = AF64F607A83EF1CD1BD6B284B59F5894 /* Pods_TableViewReuse_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA10EBA53DFC45629254756799333385 /* Pods-TableViewReuse_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5F2F5769C82091E95A5CA825874E90 /* Build configuration list for PBXNativeTarget "Pods-TableViewReuse_Example" */;
+			buildPhases = (
+				9F51186FE0FDA6D1BE584A4DCAAEE230 /* Headers */,
+				36CC566B663AEBD88CB580E274B66D41 /* Sources */,
+				0B9ED588E8CB6B278D1A1A39158A435E /* Frameworks */,
+				D98BAC640CAE768A2B90C5FFC31C7FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7E2AA584E4CC5616D6C7BFAB696002B /* PBXTargetDependency */,
+			);
+			name = "Pods-TableViewReuse_Example";
+			productName = "Pods-TableViewReuse_Example";
+			productReference = C463B7CD8741B99D1240263D1028BB5F /* Pods_TableViewReuse_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 840432F4732E2362B24B5BF8BD16A9EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA10EBA53DFC45629254756799333385 /* Pods-TableViewReuse_Example */,
+				8185B02268F8ED8744D2C065A52C2A8F /* Pods-TableViewReuse_Tests */,
+				622214B9F3D33E3368662F77088849B3 /* TableViewReuse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CE855D7375E20B13A04259962D9A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F09AD71712AA5A894275392AC00CBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98BAC640CAE768A2B90C5FFC31C7FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33B84813E393E237098F93B6FE713427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAEF3416E35AAB079E49F3191E7FA0B0 /* TableViewReuse-dummy.m in Sources */,
+				B940E44741E9C6301D81DA57A1A297FE /* UITableView+Reuse.m in Sources */,
+				5D53AC3510AF1719A2AAEB83A5CCA3BF /* UITableViewReuse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36CC566B663AEBD88CB580E274B66D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCC4767D110071EF1EB8DAC06BD57C8 /* Pods-TableViewReuse_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8680E3C0358C2DA553E5BC79284CC2B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F349F6C3BEDE53F6849CCEFF0516EAF /* Pods-TableViewReuse_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A674AD6E0586C67657F72BDC6A5913FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TableViewReuse_Example";
+			target = FA10EBA53DFC45629254756799333385 /* Pods-TableViewReuse_Example */;
+			targetProxy = D679B0483C528D2A3239F124BCB5764B /* PBXContainerItemProxy */;
+		};
+		C7E2AA584E4CC5616D6C7BFAB696002B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TableViewReuse;
+			target = 622214B9F3D33E3368662F77088849B3 /* TableViewReuse */;
+			targetProxy = 5AA7C2E83A9BBAD6F68277AD4D153F37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		021538B1F14DA6001FBFE59187143DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43E513232824118B3A49A1B6856FE5E /* Pods-TableViewReuse_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TableViewReuse_Example/Pods-TableViewReuse_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TableViewReuse_Example/Pods-TableViewReuse_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14A803D208CCA191A347B0EC28B35F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E867FDD3CD5DBF78163E2C35E01642 /* TableViewReuse.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TableViewReuse/TableViewReuse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TableViewReuse/TableViewReuse-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TableViewReuse/TableViewReuse.modulemap";
+				PRODUCT_MODULE_NAME = TableViewReuse;
+				PRODUCT_NAME = TableViewReuse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5DC48BC995BCA7AF28A7AAE881CF74A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB510906BD79671586A93A908657DE8 /* Pods-TableViewReuse_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TableViewReuse_Tests/Pods-TableViewReuse_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TableViewReuse_Tests/Pods-TableViewReuse_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC35988655BAF8065B54573D3059CFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806D88290A27F3E8D4B733637A3BCA7F /* Pods-TableViewReuse_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TableViewReuse_Tests/Pods-TableViewReuse_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TableViewReuse_Tests/Pods-TableViewReuse_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5950A37A453C09E3FAB88BB0A9BB27D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9579407DB9EC125CA5A77FD7BA6712F6 /* Pods-TableViewReuse_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TableViewReuse_Example/Pods-TableViewReuse_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TableViewReuse_Example/Pods-TableViewReuse_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E801D03216BB097CFB902FA3B11E8464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D744BB5415CB4AC77F459FB1EF59A0BB /* TableViewReuse.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TableViewReuse/TableViewReuse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TableViewReuse/TableViewReuse-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TableViewReuse/TableViewReuse.modulemap";
+				PRODUCT_MODULE_NAME = TableViewReuse;
+				PRODUCT_NAME = TableViewReuse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C5F2F5769C82091E95A5CA825874E90 /* Build configuration list for PBXNativeTarget "Pods-TableViewReuse_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5950A37A453C09E3FAB88BB0A9BB27D /* Debug */,
+				021538B1F14DA6001FBFE59187143DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4843C97F77892CF8353D7EE791C08A /* Build configuration list for PBXNativeTarget "Pods-TableViewReuse_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC35988655BAF8065B54573D3059CFE5 /* Debug */,
+				5DC48BC995BCA7AF28A7AAE881CF74A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2B6D6A437ACC359075575F9E3AFFA6 /* Build configuration list for PBXNativeTarget "TableViewReuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A803D208CCA191A347B0EC28B35F76 /* Debug */,
+				E801D03216BB097CFB902FA3B11E8464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
