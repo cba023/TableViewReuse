@@ -18,7 +18,7 @@
 }
 
 /// Reuse cell with any class
-- (id)reuseCellWithAnyClass:(Class)aClass {
+- (id)dequeueReusableCellWithAnyClass:(Class)aClass {
     
     NSString *className = NSStringFromClass(aClass);
     id cell = [self dequeueReusableCellWithIdentifier:className];
@@ -30,7 +30,7 @@
 }
 
 /// Reuse cell with nib class and bundle
-- (id)reuseCellWithNibClass:(Class)nibClass bundle:(NSBundle *)bundle {
+- (id)dequeueReusableCellWithNibClass:(Class)nibClass bundle:(NSBundle *)bundle {
     
     NSString *className = NSStringFromClass(nibClass);
     id cell = [self dequeueReusableCellWithIdentifier:className];
@@ -43,14 +43,14 @@
 }
 
 /// Reuse cell with nib class
-- (id)reuseCellWithNibClass:(Class)nibClass {
+- (id)dequeueReusableCellWithNibClass:(Class)nibClass {
     
-    return [self reuseCellWithNibClass:nibClass bundle:NSBundle.mainBundle];
+    return [self dequeueReusableCellWithNibClass:nibClass bundle:NSBundle.mainBundle];
     
 }
 
 /// Reuse header or footer with nib and bundle
-- (id)reuseHeaderFooterWithNib:(Class)nibClass bundle:(NSBundle *)bundle {
+- (id)dequeueReusableHeaderFooterViewWithNib:(Class)nibClass bundle:(NSBundle *)bundle {
     
     NSString *className = NSStringFromClass(nibClass);
     UIView *headerFooter = [self dequeueReusableHeaderFooterViewWithIdentifier:className];
@@ -63,14 +63,14 @@
 }
 
 /// Reuse header or footer with nib
-- (id)reuseHeaderFooterWithNib:(Class)nibClass {
+- (id)dequeueReusableHeaderFooterViewWithNib:(Class)nibClass {
     
-    return [self reuseHeaderFooterWithNib:nibClass bundle:NSBundle.mainBundle];
+    return [self dequeueReusableHeaderFooterViewWithNib:nibClass bundle:NSBundle.mainBundle];
     
 }
 
 /// Reuse cell with any class
-- (id)reuseHeaderFooterWithAnyClass:(Class)aClass {
+- (id)dequeueReusableHeaderFooterViewWithAnyClass:(Class)aClass {
     
     NSString *className = NSStringFromClass(aClass);
     UIView *headerFooter = [self dequeueReusableHeaderFooterViewWithIdentifier:className];

@@ -14,7 +14,7 @@ public extension UITableView {
     ///   - nibClass: Nib class
     ///   - bundle: Bundle
     /// - Returns: A cell instance
-    func reuseCell<T: UITableViewCell>(nibClass: T.Type, bundle: Bundle = .main) -> T {
+    func dequeueReusableCell<T: UITableViewCell>(nibClass: T.Type, bundle: Bundle = .main) -> T {
 
         let className = "\(String(describing: nibClass))"
         var cell = self.dequeueReusableCell(withIdentifier: className)
@@ -30,7 +30,7 @@ public extension UITableView {
     ///   - anyClass: Any cell class
     ///   - bundle: Bundle
     /// - Returns: A cell instance
-    func reuseCell<T: UITableViewCell>(anyClass: T.Type, bundle: Bundle = .main) -> T {
+    func dequeueReusableCell<T: UITableViewCell>(anyClass: T.Type, bundle: Bundle = .main) -> T {
         
         let className = "\(String(describing: anyClass))"
         var cell = self.dequeueReusableCell(withIdentifier: className)
@@ -49,7 +49,7 @@ public extension UITableView {
     ///   - nibClass: Nib class
     ///   - bundle: Bundle
     /// - Returns: A header or footer instance
-    func reuseHeaderFooter<T: UIView>(nibClass: T.Type, bundle: Bundle = .main) -> T {
+    func dequeueReusableHeaderFooterView<T: UIView>(nibClass: T.Type, bundle: Bundle = .main) -> T {
         
         let className = "\(String(describing: nibClass))"
         var headerFooter:UIView? = (self.dequeueReusableHeaderFooterView(withIdentifier: className))
@@ -66,7 +66,7 @@ public extension UITableView {
     ///   - anyClass: Any class
     ///   - bundle: Bundle
     /// - Returns: A header or footer instance
-    func reuseHeaderFooter<T: UITableViewHeaderFooterView>(anyClass: T.Type, bundle: Bundle = .main) -> T {
+    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(anyClass: T.Type, bundle: Bundle = .main) -> T {
         
         let className = "\(String(describing: anyClass))"
         var headerFooter:UIView? = self.dequeueReusableHeaderFooterView(withIdentifier: className)

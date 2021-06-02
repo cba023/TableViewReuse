@@ -54,9 +54,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row % 2 == 0 {
             // MARK: Call the Swift API
-            let cell = tableView.reuseCell(nibClass: NibListTableViewCell.self) // Swift Method
+            let cell = tableView.dequeueReusableCell(nibClass: NibListTableViewCell.self) // Swift Method
             // MARK: Call the Objective-C API
-            // let cell = tableView.reuseCell(withNibClass: NibListTableViewCell.self) as! NibListTableViewCell // Objective-C Method
+            // let cell = tableView.dequeueReusableCell(withNibClass: NibListTableViewCell.self) as! NibListTableViewCell // Objective-C Method
             let md = self.list[indexPath.row]
             cell.titleLabel.text = md.name ?? "noname"
             cell.descLabel.text = md.pdUpdateTime ?? "notime"
@@ -65,7 +65,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             // MARK: Call the Swift API
 //            let cell = tableView.reuseCell(anyClass: AnyClassTableViewCell.self) // Swift Method
             // MARK: Call the Objective-C API
-            let cell = tableView.reuseCell(withAnyClass: AnyClassTableViewCell.self) as! AnyClassTableViewCell // Objective-C Method
+            let cell = tableView.dequeueReusableCell(withAnyClass: AnyClassTableViewCell.self) as! AnyClassTableViewCell // Objective-C Method
             let md = self.list[indexPath.row]
             cell.nameLabel.text = md.name ?? "noname"
             cell.timeLabel.text = md.pdUpdateTime ?? "notime"
