@@ -16,7 +16,6 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 
-## Requirements
 
 ## Installation
 
@@ -54,9 +53,9 @@ So we have an easier way to do it.
 
 ```Swift
 // Call the Swift API for Nib type TableViewCell
-let cell = tableView.reuseCell(nibClass: NibListTableViewCell.self)
+let cell = tableView.dequeueReusableCell(nibClass: NibListTableViewCell.self)
 // Call the Objective-C API for Nib type TableViewCell
-let cell = tableView.reuseCell(withNibClass: NibListTableViewCell.self) as! NibListTableViewCell
+let cell = tableView.dequeueReusableCell(withNibClass: NibListTableViewCell.self) as! NibListTableViewCell
 ```
 
 #### Reuse Any Class type TableViewCell
@@ -74,9 +73,9 @@ Now:
 
 ```Swift
 // Call the Swift API for Any class TableViewCell
-let cell = tableView.reuseCell(anyClass: AnyClassTableViewCell.self)
+let cell = tableView.dequeueReusableCell(anyClass: AnyClassTableViewCell.self)
 // Call the Objective-C API for Any class TableViewCell
-let cell = tableView.reuseCell(withAnyClass: AnyClassTableViewCell.self) as! AnyClassTableViewCell
+let cell = tableView.dequeueReusableCell(withAnyClass: AnyClassTableViewCell.self) as! AnyClassTableViewCell
 ```
 
 ### In the Objective-C Scene
@@ -95,7 +94,7 @@ NibListTableViewCell *cell = tableView.dequeueReusableCell(withIdentifier: "NibL
 Now:
 
 ```Objective-C
-NibListTableViewCell *cell = [tableView reuseCellWithNibClass:NibListTableViewCell.class];
+NibListTableViewCell *cell = [tableView dequeueReusableCellWithNibClass:NibListTableViewCell.class];
 ```
 
 #### Reuse Any Class type TableViewCell
@@ -112,7 +111,7 @@ AnyClassTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Any
 Now:
 
 ```Objective-C
-AnyClassTableViewCell *cell = [tableView reuseCellWithAnyClass:AnyClassTableViewCell.class];
+AnyClassTableViewCell *cell = [tableView dequeueReusableCellWithAnyClass:AnyClassTableViewCell.class];
 ```
 
 
