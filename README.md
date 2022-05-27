@@ -66,7 +66,7 @@ Traditional Style:
 // Register cell
 tableView.register(AnyClassTableViewCell.self, forCellReuseIdentifier: "AnyClassTableViewCell")
 // Dequeue reusable cells
-tableView.dequeueReusableCell(withIdentifier: "AnyClassTableViewCell.self", for: indexPath)
+tableView.dequeueReusableCell(withIdentifier: "AnyClassTableViewCell", for: indexPath)
 ```
 
 Now:
